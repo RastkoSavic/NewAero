@@ -1,0 +1,318 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 30, 2017, 12:24:37 PM
+    Author     : Asus
+*/
+
+/*@font-face {
+	font-family: 'Oswald';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Oswald'), url(../fonts/Oswald-Regular.ttf);
+}*/
+
+/*@font-face {
+	font-family: 'Ubuntu';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Ubuntu'), url(../fonts/Ubuntu-Regular.ttf);
+}*/
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1.4em;
+}
+
+.acc {
+	font-style: italic;
+	color: #FF8F6E;
+	font-size: 1.3em;
+}
+
+.for-aero {
+	font-family: 'Oswald', sans-serif;
+	color: #FF8F6E;
+	font-size: 1.6em;
+	font-weight: bold;
+	font-style: normal;
+	text-shadow: 2px 1px #333333;
+}
+
+.ita {
+	font-style: italic;
+}
+
+.glyphicon {
+	font-size: 1.175em;
+}
+
+.affix {
+	top: 55px;
+}
+
+@media ( max-width : 767px) {
+	.affix {
+		position: static;
+	}
+	.logoprofile img {
+		margin: 0 auto;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Oswald', sans-serif;
+}
+
+li a {
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	font-size: 1.1em;
+	text-transform: uppercase;
+}
+
+.navbar-inverse a.navbar-brand {
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	font-size: 1.6em;
+	text-transform: uppercase;
+	color: #FF8F6E;
+	letter-spacing: 2px;
+	text-shadow: 2px 1px #333333;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	/*color: #E9D49D;*/
+	color: #FFEA97;
+	text-shadow: 2px 1px #333333;
+}
+
+html {
+	height: 100%;
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+footer {
+	background-color: #446e9b;
+	padding: 10px;
+}
+
+.navbar-fixed-bottom {
+	position: relative;
+	bottom: -300px;
+	border-width: 1px 1px 0;
+}
+
+.colorfix h5 {
+	color: #FFEA97;
+	text-shadow: 2px 1px #333333;
+}
+
+.colorfix a {
+	color: #FFEA97;
+	text-shadow: 2px 1px #333333;
+}
+
+footer h3 {
+	color: #FF8F6E;
+}
+
+h4.panel-title a {
+	font-size: 1.1em;
+	color: #FFEA97;
+	text-shadow: 2px 1px #333333;
+}
+
+.btn-default {
+	background-color: white;
+	background-image: none;
+	border-color: white;
+}
+
+.btn-default:hover {
+	background-color: white;
+	background-image: none;
+	border-color: white;
+}
+
+.btn-default:focus {
+	background-color: white;
+	background-image: none;
+	border-color: white;
+}
+
+.btn-default:active {
+	background-color: white;
+	background-image: none;
+	border-color: white;
+}
+
+.table {
+	margin-bottom: 0;
+}
+
+h4 {
+	padding-left: 5px;
+}
+
+@media ( max-width : 500px) {
+	.container {
+		padding: 5px;
+		margin: 5px;
+	}
+	body {
+		padding: 0;
+	}
+	.navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+		margin-left: 0;
+		margin-right: 0;
+		margin-bottom: 0;
+	}
+}
+
+/* Ovo je za navbar preko celog ekrana za mobilne */
+.navbar-collapse.collapse {
+	transition: ease-in 0.3s;
+}
+
+.navbar-collapse.collapsing {
+	height: 0 !important;
+}
+
+.navbar-collapse.collapse.in {
+	max-height: none;
+	height: 100vh;
+}
+
+.veci {
+	font-size: 1.1em;
+}
+
+.pad {
+	padding: 10px;
+}
+
+input[readonly].form-control {
+	background-color: #fff;
+}
+
+textarea[readonly].form-control {
+	background-color: #fff;
+}
+
+.image {
+	margin: -10px;
+}
+
+/* Ovo je da se izjednaci prvi i poslednji u opadajucem meniju */
+.lipadbottom {
+	margin-bottom: 5px;
+}
+
+.lipadtop {
+	margin-top: 5px;
+}
+
+.carousel-control.right, .carousel-control.left {
+	background-image: none;
+	color: #f4511e;
+}
+
+.carousel-indicators li {
+	border-color: #f4511e;
+}
+
+.carousel-indicators li.active {
+	background-color: #f4511e;
+}
+
+.item h4 {
+	font-size: 19px;
+	line-height: 1.375em;
+	font-weight: 400;
+	font-style: italic;
+	margin: 70px 0;
+}
+
+.item span {
+	font-style: normal;
+}
+
+/* Ovo je predefinisanje collapsa (da pocne od 900) */
+@media ( min-width : 768px) and ( max-width: 900px ) {
+	.navbar-collapse.collapse {
+		display: none !important;
+	}
+	.navbar-collapse.collapse.in {
+		display: block !important;
+	}
+	.navbar-header .collapse, .navbar-toggle {
+		display: block !important;
+	}
+	.navbar-header {
+		float: none;
+	}
+}
+
+/* Ovo je da promeni tabelu u blok ispod 800 */
+@media only screen and (max-width: 800px) {
+	/* Force table to not be like tables anymore */
+	#no-more-tables table, #no-more-tables thead, #no-more-tables tbody,
+		#no-more-tables th, #no-more-tables td, #no-more-tables tr {
+		display: block;
+	}
+
+	/* Hide table headers (but not display: none;, for accessibility) */
+	#no-more-tables thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	#no-more-tables tr {
+		border: 1px solid #ccc;
+	}
+	#no-more-tables td {
+		/* Behave  like a "row" */
+		border: none;
+		min-height: 32px;
+		border-bottom: 1px solid #eee;
+		position: relative;
+		padding-left: 50%;
+		white-space: pre-line; /*normal*/
+		text-align: left;
+	}
+	#no-more-tables .multicell {
+		padding-left: 5px;
+		line-height: 150%;
+	}
+	#no-more-tables td:before {
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%;
+		padding-right: 10px;
+		white-space: nowrap;
+		text-align: left;
+		font-weight: bold;
+	}
+
+	/*
+    Label the data
+    */
+	#no-more-tables td:before {
+		content: attr(data-title);
+	}
+}
+
+.panel-body {
+	padding: 0;
+}
